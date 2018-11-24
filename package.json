@@ -1,0 +1,43 @@
+{
+	"name": "events-app",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://danielfernandezag.github.io/uvm-ing-soft-2-events-app",
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.8",
+		"@fortawesome/free-brands-svg-icons": "^5.5.0",
+		"@fortawesome/free-solid-svg-icons": "^5.5.0",
+		"@fortawesome/react-fontawesome": "^0.1.3",
+		"firebase": "^5.4.2",
+		"gh-pages": "^2.0.1",
+		"re-base": "^4.0.0",
+		"react": "^16.4.2",
+		"react-bootstrap": "^0.32.3",
+		"react-dom": "^16.4.2",
+		"react-paypal-express-checkout": "^1.0.5",
+		"react-redux": "^5.0.7",
+		"react-router": "^4.3.1",
+		"react-scripts": "1.1.5",
+		"redux": "^4.0.0"
+	},
+	"prettier": {
+		"printWidth": 200,
+		"tabWidth": 2,
+		"useTabs": true,
+		"semi": true,
+		"singleQuote": true,
+		"trailingComma": "none",
+		"bracketSpacing": true,
+		"jsxBracketSameLine": true,
+		"arrowParens": "avoid",
+		"proseWrap": "always"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	}
+}

@@ -1,0 +1,78 @@
+#btn-submit, #btn-close {
+  width: 100%;
+  background: rgb(250, 2, 2);  
+}
+#btn-submit:hover, #btn-close:hover {
+  width: 100%;
+  background: rgb(182, 1, 1);  
+}
+.code-container {
+  display: flex;
+  flex-direction: row;
+  border: solid #ddd 1px;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.icon-date, .icon-code {
+  width: 50%;
+  margin: auto;
+  align-self: auto;
+  padding: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#date, #code {
+  width: 100%;
+  margin: auto;
+  align-self: auto;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  border: solid #ddd 1px;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.icon-1, .icon-2, .icon-3 {
+  width: 30%;
+  margin: auto;
+}
+#icon1, #icon2, #icon3 {
+  width: 100%;
+  font-size: 80px;
+  margin: auto;
+}
+#icon1, #icon2, #icon3 {
+  width: 100%;
+  font-size: 80px;
+  margin: auto;
+}
+#icon1 {
+  color: rgb(39, 128, 245);
+}
+
+#icon2 {
+  color: rgb(243, 161, 67);
+}
+#icon3 {
+  color: rgb(14, 47, 235);
+}
+
+#lbl-check-1 {
+  font-weight: bold;
+}
+.lbl-check {
+  font-weight: 400;
+}

@@ -1,0 +1,37 @@
+.seat-free {
+  background-color: rgb(43, 255, 0);
+  color: rgb(36, 36, 36);
+}
+.seat-reserved {
+  background-color: rgb(240, 159, 10);
+  color: rgb(36, 36, 36);
+}
+.seat-paid {
+  background-color: rgb(247, 114, 114);
+  color: rgb(36, 36, 36);
+}
+.seat-free:hover {
+  background-color: rgb(43, 255, 0);
+  background: rgb(43, 255, 0);
+}
+.seat-reserved:hover {
+  background-color: rgb(240, 150, 16);
+  background: rgb(240, 147, 8);
+}
+.seat-paid:hover {
+  background-color: rgb(192, 88, 88);
+  background: rgb(192, 88, 88);
+}
+
+.select-button {
+  border-radius: 5px;
+  border: solid 2px rgba(255, 255, 255, 0.9);
+  background-color: white;
+}
+.select-button:hover {
+  background-color: rgb(201, 201, 201);
+  border: solid 2px royalblue;
+}
+.cancel-button {
+  color: rgb(36, 36, 36);
+}

@@ -1,0 +1,44 @@
+.login-container {
+  border: none;
+  border-radius: 0px;
+  padding: 40px 40px;
+  background:  rgba(255, 255, 255, 0.459);
+  color: rgb(48, 48, 47);
+  align-items: center;
+  font-size: 20pt;
+  justify-content: center;
+  text-align: center;
+}
+.login-image {
+  width: 200px;
+  align-self: center;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+#Login {
+	height: 100%;
+  background-image: url('../Images/background.jpg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+}
+
+#LoginButton {
+  width: 50%;
+  margin:  auto;
+  align-self: center
+}
+
+#name, #pass {
+  color: rgb(48, 48, 47);
+  width: 50%;
+  margin: auto;
+}
+
+#nameL, #passL {
+  text-align: center;
+}

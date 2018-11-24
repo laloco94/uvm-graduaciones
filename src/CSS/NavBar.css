@@ -1,0 +1,38 @@
+.nav-bar-general{
+  color: rgb(255, 255, 255);
+  border-color: rgb(253, 253, 253);
+  -webkit-text-fill-color: rgb(41, 40, 40);
+  background: rgb(133, 207, 212);
+  border-radius: 0px;
+  text: 700px;  
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #e7f3e7;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff7f7;
+}
+
+.nav-bar-item:hover{
+  color: rgb(133, 207, 212);
+  border-color: rgb(255, 255, 255);
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  background: rgb(110, 171, 175);
+  border-radius: 700px  
+}
+
+.nav-bar-general-dropdowns{
+  color: rgb(43, 255, 0);
+  -webkit-text-fill-color : rgb(246, 250, 8);
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .nav-bar-general-dropdowns{
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color : rgb(243, 242, 248);
+  }
+}

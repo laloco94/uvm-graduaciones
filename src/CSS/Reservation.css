@@ -1,0 +1,28 @@
+#container-reservation {
+	height: 450px;
+	width: 100%;
+	padding: 10%;
+	padding-top: 40px;
+}
+.res-table{
+  overflow-y: scroll;
+  max-height: 90%;
+  height: 90%;
+  background: white;
+  border-radius: 0px 0px 5px 5px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  .res-table{ 
+    max-height: 70%;
+    height: 70%;
+  }
+}
+
+.res-data {
+  border: solid 2px rgb(209, 20, 20);
+  border-radius: 5px 5px 0px 0px;
+  padding: 15px;
+  background: rgb(209, 15, 15);
+  color: white;
+}
