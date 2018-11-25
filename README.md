@@ -1,7 +1,3 @@
-## About me
-
-Hi, my name is Eduardo Alvarado Cortes and I am a jr software engineer. Nowadays I work at a mexican company called [Nuxiba Technologies](http://www.nuxiba.com/en/index.html) which is based in Mexico City. This is one of my self teaching repositories and I hope you find one of my projects helpful for learning yourself.
-
 ## About the project
 
 This a very simple react-redux based e-shop site project that I did as a learning task. I intended to use pure JavaScript and React libraries for the front-end part of the project and a ASP.Net WebService in conjunction with a SQL database for the back-end. 
