@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Grid, Row, Col, FormControl, FormGroup, ControlLabel, Button } from 'react-bootstrap';
 import ModalBlocked from './LoginComponents/ModalBlocked';
 import ModalDoesntExist from './LoginComponents/ModalDoesntExist';
-import logo from '../Images/logo-login.PNG';
 import '../CSS/login.css';
 
 export default class Login extends Component {

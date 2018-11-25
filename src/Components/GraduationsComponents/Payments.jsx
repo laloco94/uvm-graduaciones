@@ -5,7 +5,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
 import { faMoneyBillAlt, faMoneyCheck } from '@fortawesome/free-solid-svg-icons';
-import * as Brands from '@fortawesome/free-brands-svg-icons';
 import '../../CSS/Payments.css';
 
 library.add(faMoneyBillAlt);
@@ -86,13 +85,11 @@ export default class Payments extends Component {
 					<Table striped bordered condensed hover>
 						<thead>
 							<tr>
-								<th>Cuenta</th>
 								<th>Nombre</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>{this.props.user}</td>
 								<td>{this.props.name}</td>
 							</tr>
 						</tbody>
@@ -109,22 +106,22 @@ export default class Payments extends Component {
 						</thead>
 						<tbody>
 							<tr>
-								<td>1er Pago</td>
+								<td>Pago 1</td>
 								<td>{this.props.pay1 ? 'PAGADO' : 'PENDIENTE'}</td>
 								<td>$ 500.00 MXN</td>
 							</tr>
 							<tr>
-								<td>2do Pago</td>
+								<td>Pago 2</td>
 								<td>{this.props.pay2 ? 'PAGADO' : 'PENDIENTE'}</td>
 								<td>$ 500.00 MXN</td>
 							</tr>
 							<tr>
-								<td>3er Pago</td>
+								<td>Pago 3</td>
 								<td>{this.props.pay3 ? 'PAGADO' : 'PENDIENTE'}</td>
 								<td>$ 500.00 MXN</td>
 							</tr>
 							<tr>
-								<td>4to Pago</td>
+								<td>Pago 4</td>
 								<td>{this.props.pay4 ? 'PAGADO' : 'PENDIENTE'}</td>
 								<td>$ 500.00 MXN</td>
 							</tr>
@@ -155,13 +152,6 @@ export default class Payments extends Component {
 									<ControlLabel id="lbl-method">Metodo de pago:</ControlLabel>
 									<br />
 									<div id="radio-container">
-										<div id="radio-1">
-											<FontAwesomeIcon id="radio-1-icon" icon="money-check" />
-											<br />
-											Credito/Debito
-											<br />
-											<Radio name="radioGroup" value={1} inline onChange={this.handleRadiosChecked} />
-										</div>
 										<div id="radio-2">
 											<FontAwesomeIcon id="radio-2-icon" icon="money-bill-alt" />
 											<br />
@@ -169,13 +159,7 @@ export default class Payments extends Component {
 											<br />
 											<Radio name="radioGroup" value={2} inline onChange={this.handleRadiosChecked} />
 										</div>
-										<div id="radio-3">
-											<FontAwesomeIcon id="radio-3-icon" icon={Brands.faCcPaypal} />
-											<br />
-											PayPal
-											<br />
-											<Radio name="radioGroup" value={3} inline onChange={this.handleRadiosChecked} />
-										</div>
+										
 									</div>
 								</FormGroup>
 								{this.state.option === '3' ? <PaypalExpressBtn client={client} currency={'MXN'} total={this.state.quantity} /> : <Button type="submit">Continuar</Button>}

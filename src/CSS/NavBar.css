@@ -18,21 +18,21 @@
 .nav-bar-item:hover{
   color: rgb(133, 207, 212);
   border-color: rgb(255, 255, 255);
-  -webkit-text-fill-color: rgb(255, 255, 255);
-  background: rgb(110, 171, 175);
+  -webkit-text-fill-color: rgb(41, 40, 40);
+  background: rgb(133, 207, 212);
   border-radius: 700px  
 }
 
 .nav-bar-general-dropdowns{
-  color: rgb(43, 255, 0);
-  -webkit-text-fill-color : rgb(246, 250, 8);
+  color: rgb(133, 207, 212);
+  -webkit-text-fill-color : rgb(41, 40, 40);
 }
 
 
 
 @media screen and (max-width: 700px) {
   .nav-bar-general-dropdowns{
-    color: rgb(255, 255, 255);
-    -webkit-text-fill-color : rgb(243, 242, 248);
+    color: rgb(133, 207, 212);
+    -webkit-text-fill-color : rgb(41, 40, 40);
   }
 }

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Modal, Button, FormGroup, FormControl, ProgressBar, Table } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as Brands from '@fortawesome/free-brands-svg-icons';
+import { Modal, Button, Table } from 'react-bootstrap';
 import '../../CSS/Checkout.css';
 
 export default class Checkout extends Component {
@@ -60,50 +58,11 @@ export default class Checkout extends Component {
 			<div>
 				<Modal show={this.props.show} onHide={this.props.hide}>
 					<Modal.Header closeButton>
-						<Modal.Title id="lbl-check-1">{this.props.option === '1' ? 'Ingresar Datos de Cobro' : 'Datos para realizar un deposito'}</Modal.Title>
+						<Modal.Title id="lbl-check-1">{this.props.option ===  'Datos para realizar un deposito'}</Modal.Title>
 					</Modal.Header>
 					{this.props.option === '1' ? (
 						<Modal.Body>
-							<form onSubmit={this.handelSubmit}>
-								<h4 className="lbl-check">{`Pago: ${this.props.payment}`}</h4>
-								<h4 className="lbl-check">{`Cuenta: ${this.props.user}`}</h4>
-								<h4 className="lbl-check">{`Alumno: ${this.props.name}`}</h4>
-								<h4 className="lbl-check">{`Monto a pagar: $ ${this.props.quantity} MXN`}</h4>
-								<h4 className="lbl-check">{`Correo de facturación: ${this.props.mail}`}</h4>
-								<div className="icons-container">
-									<div className="icon-1">
-										<FontAwesomeIcon id="icon1" icon={Brands.faCcAmex} />
-									</div>
-									<div className="icon-2">
-										<FontAwesomeIcon id="icon2" icon={Brands.faCcMastercard} />
-									</div>
-									<div className="icon-3">
-										<FontAwesomeIcon id="icon3" icon={Brands.faCcVisa} />
-									</div>
-								</div>
-								<FormGroup>
-									<FormControl type="number" value={this.state.card} placeholder="tarjeta..." onChange={this.handleCardChange} required />
-								</FormGroup>
-								<div className="code-container">
-									<div className="icon-date">
-										<FormGroup>
-											<FormControl id="date" type="text" value={this.state.date} placeholder="MM/YY" onChange={this.handleDateChange} required />
-										</FormGroup>
-									</div>
-									<div className="icon-code">
-										<FormGroup>
-											<FormControl id="code" type="number" value={this.state.code} placeholder="CVC" onChange={this.handleCodeChange} required />
-										</FormGroup>
-									</div>
-								</div>
-								{!this.state.isLoading ? (
-									<Button id="btn-submit" type="submit" bsStyle="danger">
-										Pagar
-									</Button>
-								) : (
-									<ProgressBar active bsStyle="info" now={this.state.percentage} />
-								)}
-							</form>
+							
 						</Modal.Body>
 					) : (
 						<Modal.Body>

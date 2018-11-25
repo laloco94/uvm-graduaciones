@@ -20,9 +20,9 @@
 }
 
 .res-data {
-  border: solid 2px rgb(209, 20, 20);
+  border: rgb(133, 207, 212);
   border-radius: 5px 5px 0px 0px;
   padding: 15px;
-  background: rgb(209, 15, 15);
+  background: rgb(133, 207, 212);
   color: white;
 }
