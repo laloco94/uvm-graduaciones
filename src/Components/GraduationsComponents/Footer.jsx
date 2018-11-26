@@ -11,7 +11,7 @@ export default class Footer extends Component {
 							<h6>GRADUACION Universidad del Valle de Mexico</h6>
 							<p class="text-justify">
 								Felicidades!
-								Todo esfuerzo, tiene su recompesa y aumnque el camino no fue facil, lo lograste. <br/>
+								Todo esfuerzo, tiene su recompesa y aun que el camino no fue facil, lo lograste. <br/>
 								Eres un campeón de la vida.
 							</p>
 						</div>
