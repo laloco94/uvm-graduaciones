@@ -77,23 +77,13 @@ export default class Login extends Component {
 							<form onSubmit={this.submitLogin}>
 								<FormGroup controlId="formAccount" validationState={this.getValidationStateAccount()}>
 									<label style={{ textAlign: 'left' }} id="nameL"> Numero de Cuenta &ensp;</label>
-									{this.state.interacted ? (
-										this.getValidationStateAccount() === 'success' ? (
-											<ControlLabel> numero de cuenta valido </ControlLabel>
-										) : (
-											<ControlLabel> numero de cuenta invalido </ControlLabel>
-										)
-									) : (
-										''
-									)}
+									
 									<FormControl type="text" id="name" value={this.state.account} placeholder="ingresa tu numero de cuenta" onChange={this.handleChangeAccount} required />
-									<FormControl.Feedback />
 								</FormGroup>
 								<FormGroup controlId="formPassword" validationState={this.state.loginError ? 'error' : null}>
 									<label style={{ textAlign: 'left' }} id="passL">Contraseña &ensp;</label>
 									{this.state.loginError && <ControlLabel> cuenta o contraseña incorrecta </ControlLabel>}
 									<FormControl type="password" id="pass" value={this.state.password} placeholder="ingresa tu contraseña" onChange={this.handleChangePassword} required />
-									<FormControl.Feedback />
 								</FormGroup>
 								<Button type="submit" id="LoginButton">
 									Acceder

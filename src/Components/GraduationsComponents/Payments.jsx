@@ -79,7 +79,7 @@ export default class Payments extends Component {
 		return (
 			<Jumbotron id="PaymentsContainer">
 				<Label id="label-username" bsStyle="danger">
-					{`ESTADO: ${this.props.pay1 === true && this.props.pay2 === true && this.props.pay3 === true && this.props.pay4 === true ? 'PAGADO' : 'POR PAGAR'}`}
+					{`ESTADO: ${this.props.pay1 === true && this.props.pay2 === true && this.props.pay3 === true && this.props.pay4 === true ? 'Todo esta pagado' : 'Faltan pagos'}`}
 				</Label>
 				<div className="table-container">
 					<Table striped bordered condensed hover>
@@ -125,13 +125,8 @@ export default class Payments extends Component {
 								<td>{this.props.pay4 ? 'PAGADO' : 'PENDIENTE'}</td>
 								<td>$ 500.00 MXN</td>
 							</tr>
-						</tbody>
-					</Table>
-				</div>
-				{!(this.props.pay1 === true && this.props.pay2 === true && this.props.pay3 === true && this.props.pay4 === true) && (
-					<React.Fragment>
-						<Label id="label-form" bsStyle="danger">
-							PAGO {payment}
+							<Label id="label-form" bsStyle="danger">
+							PAGO
 						</Label>
 						<Checkout
 							show={this.state.showPayment}
@@ -165,6 +160,13 @@ export default class Payments extends Component {
 								{this.state.option === '3' ? <PaypalExpressBtn client={client} currency={'MXN'} total={this.state.quantity} /> : <Button type="submit">Continuar</Button>}
 							</form>
 						</div>
+						</tbody>
+						
+					</Table>
+				</div>
+				{!(this.props.pay1 === true && this.props.pay2 === true && this.props.pay3 === true && this.props.pay4 === true) && (
+					<React.Fragment>
+						
 					</React.Fragment>
 				)}
 			</Jumbotron>
