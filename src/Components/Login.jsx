@@ -75,7 +75,7 @@ export default class Login extends Component {
 						{this.state.loginBlocked && <ModalBlocked show={this.state.loginBlocked} />}
 						<div className="login-container">
 							<form onSubmit={this.submitLogin}>
-								<FormGroup controlId="formAccount" validationState={this.getValidationStateAccount()}>
+								<FormGroup controlId="formAccount" >
 									<label style={{ textAlign: 'left' }} id="nameL"> Numero de Cuenta &ensp;</label>
 									
 									<FormControl type="text" id="name" value={this.state.account} placeholder="ingresa tu numero de cuenta" onChange={this.handleChangeAccount} required />
