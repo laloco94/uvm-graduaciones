@@ -16,7 +16,7 @@ export default class Footer extends Component {
 							</p>
 						</div>
 						<div class="col-xs-6 col-md-3">
-							<h6>Categories</h6>
+							<h6>Social Media</h6>
 							<ul class="footer-links">
 								<li>
 									<a href="https://www.facebook.com/UVMcampusSanRafael/">facebook</a>
