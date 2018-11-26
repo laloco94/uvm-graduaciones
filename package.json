@@ -2,7 +2,7 @@
   "name": "events-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://danielfernandezag.github.io/uvm-ing-soft-2-events-app",
+  "homepage": "https://laloco94.github.io/uvm-graduaciones",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
     "@fortawesome/free-brands-svg-icons": "^5.5.0",
